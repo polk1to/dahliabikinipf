@@ -1,0 +1,182 @@
+$primary: rgb(214, 158, 158); 
+
+.carousel-inner{
+
+    max-height: 120rem;
+  }
+  .img-1{
+   background-image: url(../pages/imagenes.html/fotoc5.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 50em;
+   width: 100%;
+   }
+   .img-2{
+     background-image: url(../pages/imagenes.html/fotoc3.png);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 50em;
+     width: 100%;
+     }
+     .img-3{
+       background-image: url(../pages/imagenes.html/bikini4.jpg);
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       height: 50em;
+       width: 100%;
+       }
+  .servicio-fila{
+    width: 100% !important;
+    text-align: center;
+  }
+  
+  .img-w{
+   background-image: url(../pages/imagenes.html/fondogris.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 40em;
+   width: 100%;
+   background-attachment: fixed;
+  }
+  .img-redes{
+    width: 70px;
+  }
+  #numeros-local div{
+    padding: 0 20px 0 0;
+    height: 48px;
+ 
+  }
+  #numeros-local div:not(:last-child){
+    border-right: 2px solid #3f3f3f;
+  }
+   
+  #numeros-local div:not(:first-child){
+    padding-left: 20px;
+ 
+  }
+  #numeros-local p{
+    margin:0;
+  }
+  #bg-contacto {
+    position:relative;
+    top:-130px;
+ 
+    }
+ 
+ 
+    #seccion-contacto {
+      background-color: #0D6EFD ;
+      min-height: 500px;
+      position: relative;
+ 
+     }
+      #contenedor-formulario {
+        position: absolute;
+        top:30%;
+        left: 50%;
+        transform: traslate(-50%, -50%);
+        background:  #0D6EFD;
+        border-radius: 5px;
+        max-width: 500px;
+      }
+ 
+      #titutlo-formulario {
+        color: #3f3f3f;
+      }
+     .body{
+        $font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+    
+
+     div {
+         background-color: map-get($estilos, color );
+         text-align:map-get($estilos , centro ) ;
+         padding: map-get($estilos ,1rem );
+          font-size: map-get($estilos , tfuente );
+           color: rgb(214, 158, 158);
+     }
+
+     
+
+     @each $ubicacion, $espacio in padding {
+         .padding#{$ubicacion}{
+             padding: $espacio;
+         }
+
+         $azul:rgb(214, 158, 158);
+         $negro: black;
+         $amarrillo:yellow;
+         @each $color in $azul, $negro, $amarrillo {
+             .#{color}{
+                 color: #{$color};
+             }
+             
+         }
+     }
+
+     .btn {
+         @extend .btn;
+         background-color: green;
+         color: white;
+         width: 150px;
+         height: 50px; 
+         border: 1px solid white;
+         border-radius: 50px;
+         text-align: center;
+     }
+     
+     @mixin textos ($color, $size) {
+         color: $color;
+         font-size: $size;
+         
+     }
+      
+       @mixin textos ($color, $size, $alineacion) {
+        color: $color;
+        font-size:$size;
+        width: 100px;
+       
+     }
+       
+       @mixin flex-end {
+         display: flex;
+         flex-direction: row;
+         justify-content:  flex-end; 
+         
+     }
+
+     @mixin overflow-x {
+         overflow: hidden;
+         }
+         @mixin flex-column {
+             display: flex;
+             flex-direction: column;
+            }
+            
+                
+            
+
+
+     div {
+         display: flex-end;
+     }
+
+     @for $i from 1 through 10 {
+         .col-#{$i}{
+             width: 10%*$i;
+         }
+     }
+           
+           
+      
+  
+
+
+
+
+@import "../bootstrap-5.1.1/scss/bootstrap.scss";
+ 
